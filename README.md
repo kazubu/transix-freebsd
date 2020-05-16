@@ -1,0 +1,1 @@
+# FreeBSD configuration for Transix
