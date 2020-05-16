@@ -35,4 +35,4 @@ ifconfig $TUN_IF up
 ifconfig $TUN_IF inet mtu $TUN_MTU
 
 sysctl net.inet.ip.forwarding=1
-route add default -interface gif0
+route add default -interface $TUN_IF
