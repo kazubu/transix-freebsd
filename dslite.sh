@@ -7,7 +7,7 @@ TUN_MTU="1460"
 TUN_DST="2404:8e00::feed:100"
 
 TUN_SRC=""
-V6_READY_CHK="ifconfig $V6_IF | grep -v fe80 | grep inet"
+V6_READY_CHK="ifconfig $V6_IF | grep -v fe80 | grep inet6"
 TUN_SRC_CMD="ifconfig $V6_IF | grep inet6 | grep -v fe80 | cut -d ' ' -f 2"
 
 if ifconfig $TUN_IF 2> /dev/null > /dev/null; then
